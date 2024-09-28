@@ -29,7 +29,7 @@ export default function Header() {
   return (
     <header
       ref={headerRef}
-      className="py-4 px-6 fixed w-full z-50 bg-white  shadow-md"
+      className="py-4 px-6 fixed w-full z-50  bg-gray-600  shadow-md"
     >
       <nav className="flex justify-between items-center">
         <a href="#" className="text-3xl font-bold ">
@@ -59,7 +59,7 @@ export default function Header() {
 
         {/* Mobile Menu */}
         <div
-          className={`fixed top-0 left-0 w-full h-full  bg-opacity-95 flex flex-col items-center justify-center space-y-8 transform transition-transform duration-500 ease-in-out ${
+          className={`fixed top-0 left-0 w-full h-full  bg-opacity-95 flex flex-col items-center justify-center space-y-8 transform transition-transform duration-500 ease-in-out bg-gray-400 ${
             menuOpen ? "translate-x-0" : "translate-x-full"
           } md:hidden`}
         >

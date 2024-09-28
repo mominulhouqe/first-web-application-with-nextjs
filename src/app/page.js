@@ -41,7 +41,7 @@ export default function Portfolio() {
   return (
     <div
       ref={appRef}
-      className=" bg-gradient-to-r  from-blue-900 via-fuchsia-200 to-purple-900"
+      className=" bg-gradient-to-r text-white  from-gray-900 via-gray-700 to-gray-800"
     >
       <Header />
       <main className="container mx-auto px-4">

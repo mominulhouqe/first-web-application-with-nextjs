@@ -14,31 +14,36 @@ export default function InteractiveResume() {
   const resumeData = {
     experience: [
       {
-        title: "Senior Developer",
-        company: "Tech Co",
-        period: "2020 - Present",
-        description: "Led team in developing...",
+        title: "Frontend Developer",
+        company: "GAO Tek Inc.",
+        period: "July 2023 – September 2023",
+        description:
+          "Led the redesign and enhancement of the Admin dashboard, with a particular focus on improving the user interface and implementing APIs for key sections such as Post-Report, Video-Report, LiveStreaming Report, and User-Report.",
       },
       {
-        title: "Web Developer",
-        company: "StartUp Inc",
-        period: "2018 - 2020",
-        description: "Developed and maintained...",
+        title: "Web Designer",
+        company: "Tuntuni Dev",
+        period: "December 2023 – February 2024",
+        description:
+          "During my tenure at Tuntuni Dev , I served as a full-time Web Designer. My role involved leading the redesign of the Admin dashboard to enhance usability and user interface.",
       },
     ],
     education: [
       {
-        degree: "M.S. Computer Science",
-        school: "Tech University",
-        year: "2018",
-      },
-      {
-        degree: "B.S. Computer Science",
-        school: "State College",
-        year: "2016",
+        degree: "Diploma in Computer Science and Technology",
+        school: "Moulvibazar Polytechnic Institute,",
+        year: "2023",
       },
     ],
-    skills: ["JavaScript", "React", "Node.js", "Python", "SQL", "Git"],
+    skills: [
+      "JavaScript",
+      "React",
+      "Next.js",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Git",
+    ],
   };
 
   return (
@@ -86,7 +91,7 @@ export default function InteractiveResume() {
                 {resumeData.skills.map((skill, index) => (
                   <li
                     key={index}
-                    className="bg-muted rounded-md p-2 text-center"
+                    className="bg-white rounded-md p-2 text-center"
                   >
                     {skill}
                   </li>

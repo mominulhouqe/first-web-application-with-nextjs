@@ -9,18 +9,19 @@ gsap.registerPlugin(ScrollTrigger);
 const skills = [
   "JavaScript",
   "React",
+  "Next.js",
   "Node.js",
   "Express",
   "MongoDB",
   "HTML5",
   "CSS3",
+  "TailwindCSS",
   "TypeScript",
   "Redux",
-  "GraphQL",
+  "MongoDB",
   "Webpack",
   "Git",
-  "Docker",
-  "AWS",
+  "Github",
 ];
 
 export default function Skills() {
@@ -53,7 +54,7 @@ export default function Skills() {
         {skills.map((skill) => (
           <div
             key={skill}
-            className="skill-item bg-gray-800 text-white rounded-lg p-4 text-center"
+            className="skill-item bg-gray-400 text-white rounded-lg p-4 text-center"
           >
             <span className="text-lg font-semibold">{skill}</span>
           </div>
