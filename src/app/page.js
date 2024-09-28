@@ -12,6 +12,7 @@ import Contact from "@/components/Contact";
 import InteractiveResume from "@/components/InteractiveResume";
 import Blog from "@/components/Blogs";
 import Achievements from "@/components/Achevement";
+import Footer from "@/components/Footer";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -54,6 +55,7 @@ export default function Portfolio() {
         <Blog />
         <Contact />
       </main>
+      <Footer />
     </div>
   );
 }

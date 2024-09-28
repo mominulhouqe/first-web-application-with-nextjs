@@ -29,9 +29,9 @@ export default function Contact() {
   }, []);
 
   return (
-    <section id="contact" ref={contactRef} className="py-20">
+    <section id="contact" ref={contactRef} className="py-20 ">
       <h2 className="text-4xl font-bold mb-12 text-center">Get in Touch</h2>
-      <form className="contact-form max-w-lg mx-auto">
+      <form className="contact-form max-w-lg mx-auto bg-gray-600 p-6 rounded-md">
         <div className="mb-6">
           <label htmlFor="name" className="block text-sm font-medium mb-2">
             Name

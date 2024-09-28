@@ -6,6 +6,7 @@ import Image from "next/image";
 import image1 from "@/assests/momin.png"; // Ensure the image path is correct
 import { FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa";
 import { Button } from "./ui/button";
+import Link from "next/link";
 
 export default function Hero() {
   const heroRef = useRef(null);
@@ -94,9 +95,27 @@ export default function Hero() {
 
           {/* Social Icons */}
           <div className="mt-8 flex justify-center space-x-6">
-            <FaLinkedin className="social-icon text-4xl cursor-pointer text-white hover:text-blue-400 transition-transform transform hover:rotate-12 hover:scale-110 duration-300 ease-in-out" />
-            <FaGithub className="social-icon text-4xl cursor-pointer text-white hover:text-gray-400 transition-transform transform hover:rotate-12 hover:scale-110 duration-300 ease-in-out" />
-            <FaTwitter className="social-icon text-4xl cursor-pointer text-white hover:text-blue-500 transition-transform transform hover:rotate-12 hover:scale-110 duration-300 ease-in-out" />
+            <Link
+              href="https://github.com/mominulhouqe"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaLinkedin className="social-icon text-4xl cursor-pointer text-white hover:text-blue-400 transition-transform transform hover:rotate-12 hover:scale-110 duration-300 ease-in-out" />
+            </Link>
+            <Link
+              href="https://www.linkedin.com/in/mominul-hoque-290340217/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaGithub className="social-icon text-4xl cursor-pointer text-white hover:text-gray-400 transition-transform transform hover:rotate-12 hover:scale-110 duration-300 ease-in-out" />
+            </Link>
+            <Link
+              href="https://x.com/momin7000"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaTwitter className="social-icon text-4xl cursor-pointer text-white hover:text-blue-500 transition-transform transform hover:rotate-12 hover:scale-110 duration-300 ease-in-out" />
+            </Link>
           </div>
         </div>
       </div>

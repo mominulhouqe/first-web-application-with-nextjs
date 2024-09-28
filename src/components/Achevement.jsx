@@ -36,10 +36,10 @@ export default function Achievements() {
   const achievements = [
     {
       title: "Web Development Certification",
-      issuer: "FreeCodeCamp",
-      year: 2022,
+      issuer: "Programming Hero",
+      year: 2023,
     },
-    { title: "React Nanodegree", issuer: "Udacity", year: 2021 },
+    { title: "React Nanodegree", issuer: "Udacity", year: 2024 },
     { title: "Best Project Award", issuer: "Local Hackathon", year: 2023 },
   ];
 
