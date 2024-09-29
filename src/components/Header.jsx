@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
-import { MenuIcon, XIcon } from "lucide-react"; // Import icons from ShadCN (lucide-react)
+import { MenuIcon, XIcon } from "lucide-react";
 
 export default function Header() {
   const headerRef = useRef(null);
@@ -29,9 +29,9 @@ export default function Header() {
   return (
     <header
       ref={headerRef}
-      className="py-4 px-6 fixed z-50 w-full bg-gradient-to-r from-indigo-900 via-purple-900 to-pink-800 shadow-md"
+      className="py-4 px-6 fixed z-50 w-full bg-gradient-to-r from-indigo-900/80 via-purple-900/80 to-pink-800/80  shadow-lg"
     >
-      <nav className="flex justify-between items-center">
+      <nav className="flex justify-between items-center max-w-7xl mx-auto">
         <a href="#" className="text-3xl font-bold text-white">
           Mominul Houqe
         </a>
@@ -42,7 +42,7 @@ export default function Header() {
             <li key={item} className="nav-item">
               <a
                 href={`#${item.toLowerCase()}`}
-                className="text-lg font-medium hover:text-blue-400 transition-colors"
+                className="text-lg font-medium text-white hover:text-blue-400 transition-colors"
               >
                 {item}
               </a>
@@ -59,7 +59,7 @@ export default function Header() {
 
         {/* Mobile Menu */}
         <div
-          className={`fixed top-0 left-0 w-full h-full bg-gradient-to-br from-indigo-900 via-purple-900 to-pink-800 bg-opacity-95 flex flex-col items-center justify-center space-y-12 transform transition-all duration-500 ease-in-out ${
+          className={`fixed top-0 left-0 w-full h-full bg-gradient-to-br from-indigo-900/90 via-purple-900/90 to-pink-800/90  flex flex-col items-center justify-center space-y-12 transform transition-all duration-500 ease-in-out ${
             menuOpen
               ? "translate-x-0 opacity-100"
               : "translate-x-full opacity-0"
