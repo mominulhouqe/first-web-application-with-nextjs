@@ -24,7 +24,7 @@ export default function Portfolio() {
       // Main page animation
       gsap.from("main > *", {
         y: 50,
-        opacity: 0,
+        opacity: 0.9,
         stagger: 0.2,
         ease: "power3.out",
         scrollTrigger: {
@@ -42,7 +42,7 @@ export default function Portfolio() {
   return (
     <div
       ref={appRef}
-      className=" bg-gradient-to-r text-white  from-gray-900 via-gray-700 to-gray-800"
+      className="min-h-screen bg-gradient-to-br from-indigo-900 via-purple-900 to-pink-800 text-white overflow-hidden"
     >
       <Header />
       <main className="container mx-auto px-4">

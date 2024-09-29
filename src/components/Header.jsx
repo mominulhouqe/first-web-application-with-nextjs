@@ -29,10 +29,10 @@ export default function Header() {
   return (
     <header
       ref={headerRef}
-      className="py-4 px-6 fixed w-full z-50  bg-gray-600  shadow-md"
+      className="py-4 px-6 fixed z-50 w-full bg-gradient-to-r from-indigo-900 via-purple-900 to-pink-800 shadow-md"
     >
       <nav className="flex justify-between items-center">
-        <a href="#" className="text-3xl font-bold ">
+        <a href="#" className="text-3xl font-bold text-white">
           Mominul Houqe
         </a>
 
@@ -42,7 +42,7 @@ export default function Header() {
             <li key={item} className="nav-item">
               <a
                 href={`#${item.toLowerCase()}`}
-                className=" text-lg font-medium hover:text-blue-400 transition-colors"
+                className="text-lg font-medium hover:text-blue-400 transition-colors"
               >
                 {item}
               </a>
@@ -52,27 +52,37 @@ export default function Header() {
 
         {/* Mobile Menu Toggle */}
         <div className="md:hidden">
-          <button onClick={toggleMenu} className=" text-2xl">
-            {menuOpen ? <XIcon /> : <MenuIcon />}
+          <button onClick={toggleMenu} className="text-2xl text-white">
+            {menuOpen ? <XIcon size={24} /> : <MenuIcon size={24} />}
           </button>
         </div>
 
         {/* Mobile Menu */}
         <div
-          className={`fixed top-0 left-0 w-full h-full  bg-opacity-95 flex flex-col items-center justify-center space-y-8 transform transition-transform duration-500 ease-in-out bg-gray-400 ${
-            menuOpen ? "translate-x-0" : "translate-x-full"
+          className={`fixed top-0 left-0 w-full h-full bg-gradient-to-br from-indigo-900 via-purple-900 to-pink-800 bg-opacity-95 flex flex-col items-center justify-center space-y-12 transform transition-all duration-500 ease-in-out ${
+            menuOpen
+              ? "translate-x-0 opacity-100"
+              : "translate-x-full opacity-0"
           } md:hidden`}
         >
-          {["About", "Skills", "Projects", "Contact"].map((item) => (
+          {["About", "Skills", "Projects", "Contact"].map((item, index) => (
             <a
               key={item}
               href={`#${item.toLowerCase()}`}
-              onClick={toggleMenu} // Close menu after clicking
-              className=" text-2xl font-semibold hover:text-blue-400 transition-colors"
+              onClick={toggleMenu}
+              className={`text-3xl font-bold text-white hover:text-yellow-400 transition-all duration-300 transform hover:scale-110 ${
+                menuOpen ? `animate-fadeIn animation-delay-${index * 100}` : ""
+              }`}
             >
               {item}
             </a>
           ))}
+          <button
+            onClick={toggleMenu}
+            className="absolute top-6 right-6 text-white hover:text-yellow-400 transition-colors duration-300"
+          >
+            <XIcon size={32} />
+          </button>
         </div>
       </nav>
     </header>

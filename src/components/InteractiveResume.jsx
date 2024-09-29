@@ -47,7 +47,7 @@ export default function InteractiveResume() {
   };
 
   return (
-    <div className="py-16 px-6">
+    <div className={`py-16 px-6 `}>
       <h2 className="text-3xl font-bold mb-8 text-center">
         Interactive Resume
       </h2>
