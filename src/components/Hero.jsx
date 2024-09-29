@@ -60,7 +60,7 @@ export default function Hero() {
   return (
     <section
       ref={heroRef}
-      className="h-screen flex flex-col md:flex-row gap-6 items-center justify-center text-center relative overflow-hidden"
+      className="h-screen flex flex-col md:flex-row gap-6 items-center justify-center text-center relative md:mt-5 mt-10"
     >
       {/* Background Floating Shapes */}
       <div className="absolute top-10 left-0 w-60 h-60 bg-gradient-to-tr from-pink-400 to-yellow-300 rounded-full blur-3xl opacity-30 animate-pulse"></div>
@@ -85,36 +85,36 @@ export default function Hero() {
         {/* Resume Button */}
         <div className="mx-auto">
           <Button
-            className="bg-yellow-500 hover:bg-yellow-600 font-bold py-3 px-8 rounded-full text-white shadow-lg hover:shadow-xl transition-transform transform hover:scale-105 duration-300"
+            className="hero-cta bg-yellow-500 hover:bg-yellow-600 font-bold py-2 px-4 sm:py-3 sm:px-6 md:py-3 md:px-8 rounded-full text-white shadow-lg hover:shadow-xl transition-transform transform hover:scale-105 duration-300 text-sm sm:text-base md:text-lg"
             asChild
           >
-            <a href="/resume.pdf" download>
+            <a href="/Mominul_resume.pdf" download>
               Download Resume
             </a>
           </Button>
 
           {/* Social Icons */}
-          <div className="mt-8 flex justify-center space-x-6">
+          <div className="mt-6 sm:mt-8 flex justify-center space-x-4 sm:space-x-6">
             <Link
               href="https://github.com/mominulhouqe"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaLinkedin className="social-icon text-4xl cursor-pointer text-white hover:text-blue-400 transition-transform transform hover:rotate-12 hover:scale-110 duration-300 ease-in-out" />
+              <FaLinkedin className="social-icon text-3xl sm:text-4xl cursor-pointer text-white hover:text-blue-400 transition-transform transform hover:rotate-12 hover:scale-110 duration-300 ease-in-out" />
             </Link>
             <Link
               href="https://www.linkedin.com/in/mominul-hoque-290340217/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaGithub className="social-icon text-4xl cursor-pointer text-white hover:text-gray-400 transition-transform transform hover:rotate-12 hover:scale-110 duration-300 ease-in-out" />
+              <FaGithub className="social-icon text-3xl sm:text-4xl cursor-pointer text-white hover:text-gray-400 transition-transform transform hover:rotate-12 hover:scale-110 duration-300 ease-in-out" />
             </Link>
             <Link
               href="https://x.com/momin7000"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaTwitter className="social-icon text-4xl cursor-pointer text-white hover:text-blue-500 transition-transform transform hover:rotate-12 hover:scale-110 duration-300 ease-in-out" />
+              <FaTwitter className="social-icon text-3xl sm:text-4xl cursor-pointer text-white hover:text-blue-500 transition-transform transform hover:rotate-12 hover:scale-110 duration-300 ease-in-out" />
             </Link>
           </div>
         </div>
